@@ -1,0 +1,46 @@
+<div class="backdrop is-hidden" data-modal-l>
+  <div class="modal-loc">
+    <button type="button" class="backdrop-button" data-modal-close-l>
+      <svg class="backdrop-button__icon" width="11px" height="11px">
+        <use href="./images/sprite.svg#icon-modal-close-btn"></use>
+      </svg>
+    </button>
+
+    <form class="contact-form-loc">
+      <h2 class="contact-form-loc__title">Our Locations</h2>
+
+      <div class="contact-location">
+        <picture>
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/Desktop/modal-our-location/our-location.png     1x,
+              ./images/Desktop/modal-our-location/our-locationt@2x.png 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/Desktop/modal-our-location/our-location.png     1x,
+              ./images/Desktop/modal-our-location/our-locationt@2x.png 2x
+            "
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/Mobile/modal-our-location/location-mobile.png    1x,
+              ./images/Mobile/modal-our-location/location-mobile@2x.png 2x
+            "
+          />
+          <img
+            class="contact-location__map"
+            src="./images/Mobile/modal-our-location/location-mobile.png"
+            alt="Map"
+          />
+        </picture>
+      </div>
+
+      <button type="submit" class="contact-form__submit-loc">Submit</button>
+    </form>
+  </div>
+</div>

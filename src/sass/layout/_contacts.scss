@@ -1,0 +1,401 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0%;
+    overflow: hidden;
+    border: 0px;
+    clip: rect(0 0 0 0);
+}
+
+
+.contacts {
+    position: absolute;
+    width: 100%;  
+    z-index: 100;
+    margin-top: -347px;
+}
+
+
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+.card-set {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+
+
+    &__card {
+        height: 412px;
+        padding: 40px 32px;
+        background: #FCFCFC;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+    }
+}
+
+
+
+.address {
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.address__type {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    background: var(--main-button-color);
+    border-radius: 4px;
+    width: max-content;
+    height: 16px;
+    padding-left: 22.5px;
+    padding-right: 22.5px;
+    margin-bottom: 20px;
+
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+
+
+    letter-spacing: 0.04em;
+
+    color: var(--franchise-button-color);
+}
+
+.address__city {
+    margin-bottom: 8px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: var(--black);
+}
+
+.address__street {
+    margin-bottom: 24px;
+    height: 36px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 183%;
+    letter-spacing: 0.04em;
+    color: #D6936D;
+
+    &:hover,
+    &:focus {
+        text-decoration-line: underline;
+        cursor: url("../images/cursor.png"), auto;
+    }
+}
+
+.working-mode {
+    border-bottom: 1px solid #E1E1E1;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    &__days {
+        font-family: var(--main-font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        color: var(--black);
+
+    }
+
+    &__time {
+        font-family: var(--main-font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
+        color: var(--disable-button-color);
+
+        &_marg {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.mail-tel {
+    padding-top: 24px;
+
+    &__h {
+        font-family: var(--main-font-family);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.5;
+        color: var(--secondary-black-color);
+    }
+
+}
+
+.contacts-button {
+    
+    gap: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+}
+
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 196px;
+    height: 42px;
+    border: none;
+
+    margin-bottom: 16px;
+    background: var(--main-button-color);
+    border-color: var(--main-button-color);
+    border-radius: 10px;
+    border: none;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    color: var(--secondary-black-color);
+
+    &:hover {
+        background-color: #0A8817;
+        border-color: #0A8817;
+        transition: background-color var(--timing-function), border-color var(--timing-function) ;
+    }
+
+    &:focus {
+        color: var(--franchise-button-color);
+        transition: color var(--timing-function);
+    }
+}
+
+.contacts-button-svg {
+    fill: var(--secondary-black-color);
+    transition: fill var(--timing-function);
+}
+
+.location:focus .contacts-button-svg {
+    fill: var(--franchise-button-color);
+    transition: fill var(--timing-function);
+}
+
+
+
+
+.franchise {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 196px;
+    height: 42px;
+
+    border: 2px solid var(--main-button-color);
+    border-radius: 10px;
+
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    color: var(--secondary-black-color);
+    background-color: transparent;
+
+
+    &:hover {
+        border-color: #0A8817;
+        transition: border-color var(--timing-function);
+    }
+
+    &:focus {
+        color: var(--franchise-button-color);
+        transition: color var(--timing-function);
+    }
+}
+
+.franchise:focus .contacts-button-svg {
+    fill: var(--franchise-button-color);
+    transition: fill var(--timing-function);
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .contacts {           
+            margin-top: -302px;
+        }
+
+    .container {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .card-set {
+        flex-direction: row;
+        gap: 16px;
+
+        &__card {
+            height: 528px;
+            width: 224px;
+            padding: 40px 27px 40px 24px;
+            background: var(--white);
+            box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+            border-radius: 24px;
+        }
+    }
+
+    .address__type {
+        border-radius: 6px;
+        height: 28px;
+        padding-left: 13.5px;
+        padding-right: 13.5px;
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 186%;
+        color: --secondary-black-color;
+    }
+
+    .address__city {
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .address__street {
+        height: 65px;
+        margin-bottom: 26px;
+        font-size: 14px;
+    }
+
+    .working-mode {
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        &__days {
+            font-size: 14px;
+            line-height: 186%;
+        }
+
+        &__time {
+            font-size: 14px;
+            color: #907E82;
+
+            &_marg {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    .mail-tel {
+        padding-top: 32px;
+
+        &__h {
+            font-size: 14px;
+            line-height: 183%;
+            color: var(--secondary-black-color);
+        }
+    }
+
+    .contacts-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 16px;
+        align-items: baseline;
+        margin-top: 60px;
+    }
+
+    .location {
+        margin-bottom: 0px;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+   
+        .contacts{
+            margin-top: -96px;
+        }
+
+         .container {
+        width: 1200px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+       
+
+    .card-set {
+        height: 538px;
+        gap: 32px;
+
+        &__card {
+            width: 368px;
+            height: 538px;
+            padding: 40px;
+        }
+    }
+
+    .address__type {
+
+        padding-left: 14.5px;
+        padding-right: 14.5px;
+    }
+
+    .address__city {
+        margin-bottom: 8px;
+        font-size: 16px;
+        color: var(--secondary-black-colo)
+    }
+
+    .address__street {
+       
+        height: 50px;
+        margin-bottom: 32px;
+        font-size: 16px;
+    }
+
+    .working-mode {
+
+        &__days {
+            font-size: 16px;
+            color: var(--secondary-black-color);
+        }
+
+        &__time {
+            font-size: 16px;
+            color: var(--disable-button-color);
+        }
+    }
+
+    .mail-tel {
+        
+
+        &__h {
+            font-size: 16px;
+        }
+    }
+
+}

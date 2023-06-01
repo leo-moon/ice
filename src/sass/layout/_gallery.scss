@@ -1,0 +1,67 @@
+.gallery {
+    position: relative;
+    background-image: url(../images/Desktop/products/background-ice-cream@2x.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+
+.gallery__box {
+    position: relative;
+    width: 100%;
+    height: 1027px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .gallery__box {
+        height: 958px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .gallery__box {
+        max-width: 1013px;
+        height: 1020px;
+    }
+}
+
+.gallery__title {
+    display: none;
+}
+
+.slick-carousel {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    transform: translateY(-24px);
+}
+
+.gallery__photo {
+    width: 100%;
+    height: 130px;
+    border-radius: 7.5px;
+}
+
+@media (min-width: 768px) {
+    .slick-carousel {
+        transform: translateY(-164px);
+    }
+
+    .gallery__photo {
+        border-radius: 18px;
+        height: 327px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .slick-carousel {
+        transform: translateY(-94px);
+    }
+
+    .gallery__photo {
+        height: 422px;
+        border-radius: 24px;
+    }
+}

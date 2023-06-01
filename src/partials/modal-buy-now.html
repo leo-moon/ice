@@ -1,0 +1,85 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="buy-now__modal-window">
+    <button
+      type="button"
+      class="buy-now__modal-close-btn button"
+      data-modal-close
+    >
+      <svg class="buy-now__modal-close-btn-icon">
+        <use href="./images/sprite.svg#icon-modal-close-btn"></use>
+      </svg>
+    </button>
+    <h2 class="buy-now__modal-form-title">Buy now</h2>
+    <ul class="buy-now__products-list">
+      <li class="buy-now__products-item">
+        <button
+          type="button"
+          class="buy-now__products-card buy-now__products-card-ice-cream"
+        >
+          <div class="buy-now__products-card-footer">
+            <h3 class="buy-now__products-card-title">Ice cream</h3>
+          </div>
+        </button>
+      </li>
+      <li class="buy-now__products-item">
+        <button
+          type="button"
+          class="buy-now__products-card buy-now__products-card-ice-coffee"
+        >
+          <div class="buy-now__products-card-footer">
+            <h3 class="buy-now__products-card-title">Ice coffee</h3>
+          </div>
+        </button>
+      </li>
+      <li class="buy-now__products-item">
+        <button
+          type="button"
+          class="buy-now__products-card buy-now__products-card-milkshakes"
+        >
+          <div class="buy-now__products-card-footer">
+            <h3 class="buy-now__products-card-title">Milkshakes</h3>
+          </div>
+        </button>
+      </li>
+    </ul>
+    <form class="buy-now__modal-form">
+      <label class="buy-now__modal-form-field">
+        <span class="buy-now__modal-form-input-box">
+          <input
+            type="text"
+            name="user_name"
+            class="buy-now__modal-form-input"
+            required
+            pattern="[a-zA-Zа-яА-Я]+"
+            minlength="2"
+            placeholder="Name"
+          />
+        </span>
+      </label>
+      <label class="buy-now__modal-form-field">
+        <span class="buy-now__modal-form-input-box">
+          <input
+            type="tel"
+            name="user_phone"
+            class="buy-now__modal-form-input"
+            required
+            pattern="[0-9]{10}"
+            minlength="10"
+            placeholder="Phone"
+          />
+        </span>
+      </label>
+      <label class="buy-now__modal-form-field">
+        <span class="buy-now__modal-form-input-box">
+          <textarea
+            name="user_comment"
+            class="buy-now__modal-form-comment"
+            placeholder="Comment"
+          >
+          </textarea>
+        </span>
+      </label>
+      <button type="submit" class="buy-now__modal-form-submit">Submit</button>
+    </form>
+  </div>
+</div>

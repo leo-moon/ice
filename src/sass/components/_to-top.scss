@@ -1,0 +1,19 @@
+#toTop {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  background: #f8d24e;
+  justify-content: center;
+
+  align-items: center;
+  z-index: 2000;
+
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: flex;
+}

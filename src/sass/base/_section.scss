@@ -1,0 +1,21 @@
+@media screen and (max-width: 767px) {
+  .section-about {
+    background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 42px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-about {
+    background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 53px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-about {
+    background-color: var(--background-color);
+    padding-top: 60px;
+    padding-bottom: 89px;
+  }
+}
